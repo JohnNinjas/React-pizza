@@ -19,8 +19,3 @@ Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->purpose('Display an inspiring quote');
 
-Artisan::command('parse', function () {
-    $response = Http::get('https://635a4e3638725a1746c29644.mockapi.io/items');
-    var_export($response->body());
-});
-
